@@ -1,0 +1,74 @@
+:root{
+  --white: hsl(0, 0%, 100%);
+  --light-pink: hsl(275, 100%, 97%);
+  --grayish-purple: hsl(292, 16%, 49%);
+  --dark-purple: hsl(292, 42%, 14%);
+  --font-size-16: 16px;
+  --font-size-20: 20px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+  font-family: 'Work Sans', sans-serif; 
+}
+
+.main{
+  position: relative;
+  background-color: var(--grayish-purple)
+}
+
+div.accordion-title{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+div.background-image img{
+  width:100%;
+}
+
+div.background-image{
+  width: 100%;
+}
+
+
+.accordion{
+  padding: 1rem;
+  max-width: 36%;
+  background-color: var(--white);
+  position: absolute;
+  top: 0;
+  left:0;
+}
+
+div.container{
+  position: relative;
+}
+.accordion-title{
+  font-size: 72px;
+}
+
+.accordion-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+.accordion-header h2{
+  font-size: var(--font-size-20);
+  color: var(--dark-purple);
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+.accordion-item-text p{
+  font-size: var(--font-size-16);
+  color: var(--grayish-purple);
+  line-height: 1.5;
+}
+

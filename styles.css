@@ -18,13 +18,14 @@ body{
 
 .main{
   position: relative;
-  background-color: var(--grayish-purple)
+  background-color: var(--light-pink)
 }
 
 div.accordion-title{
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 30px;
+  font-size: 36px;
 }
 div.background-image img{
   width:100%;
@@ -36,20 +37,27 @@ div.background-image{
 
 
 .accordion{
-  padding: 1rem;
+  padding: 2rem;
   max-width: 36%;
   background-color: var(--white);
   position: absolute;
-  top: 0;
-  left:0;
+  top: -25%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border-radius: 16px;
+  box-shadow: 1px 1px 30px rgba(0,0,0,.2);
 }
 
 div.container{
   position: relative;
+  height: 100vh;
 }
-.accordion-title{
-  font-size: 72px;
+
+.accordion-title h1{
+  margin: 0;
 }
+
 
 .accordion-header{
   display: flex;
@@ -70,5 +78,29 @@ div.container{
   font-size: var(--font-size-16);
   color: var(--grayish-purple);
   line-height: 1.5;
+  display: none;
 }
 
+.accordion-header:first-child:not(){
+  border-top: solid black 1px;
+}
+
+.close.hide {
+  display: none;
+}
+
+.close{
+  display: block;
+}
+
+.accordion-item-text.show p{
+  display: block;
+}
+
+.open.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
